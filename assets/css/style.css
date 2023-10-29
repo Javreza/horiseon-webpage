@@ -33,26 +33,42 @@ h1 .seo {
     color: #d9dcd6;
 }
 /* went from .header to .nav with the line below*/
-.nav div {
+/* .nav div {
     padding-top: 15px;
     margin-right: 20px;
     float: right;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
-}
+} */
 /*removed div selectors up until line 48 */
+/* condensed instructions for ul elemnts with the nav-nav class */
+.nav-nav {
+    list-style-type: none; /*suspected of redundancy */
+    /*added .nav div formatting to this class*/
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    /* ul li formatters moved to anchor tags */
+    display: inline-block;
+    margin-left: 25px;
+}
 ul {
     list-style-type: none;
 }
 
-ul li {
+/*ul li {
     display: inline-block;
     margin-left: 25px;
 }
-
+*/
 a {
     color: #ffffff;
     text-decoration: none;
+    /* ul li formatters moved to anchor tags */
+    display: inline-block;
+    margin-left: 25px;
 }
 
 p {
