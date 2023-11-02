@@ -14,6 +14,7 @@ nav {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #2a607c;
     color: #ffffff;
+    float:right;
 
 }
 /*this header element formatting might be redundant,  10/27/2203 9:37 PM CST*/
@@ -22,7 +23,7 @@ header {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #2a607c;
     color: #ffffff;
-    display: flex;
+    display:flex;
 }
 
 /*removed .header class for formatters up until line 48.  10/29/2023 5:02 CSA*/
@@ -30,8 +31,8 @@ header {
 /*removed all special formatting for h1's since they can be covered in the header class or seo class*/
 h1 {
     /*display: inline-block;*/
-    float: left;
     font-size: 48px;
+    float:left;
 }
 
 h1 .seo {
@@ -54,13 +55,15 @@ h1 .seo {
     /*list-style-type: none; suspected of redundancy */
     /*added .nav div formatting to this class*/
     padding-top: 15px;
-    margin-right: 20px;
+    /* muted margin right to align nav elements like in the original page 
+    margin-right: 20px; */
     float: right;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
+    justify-content: right;
     /*TESTTESTESTTESTTESTTESTTESTTEST ul li formatters moved to anchor tags */
     /*display: inline-block;*/
-    margin-left: 25px;
+    /*margin-left: 25px;*/
 }
 ul {
     list-style-type: none;
@@ -102,14 +105,14 @@ p {
     float: right;
     margin-left: 25px;
 }
-
-.content {
+/*content changed into main*/
+main {
     width: 75%;
     display: inline-block;
     margin-left: 20px;
 }
 
-.benefits {
+aside {
     margin-right: 20px;
     padding: 20px;
     clear: both;
@@ -120,56 +123,23 @@ p {
     background-color: #2589bd;
 }
 
-.benefit-lead {
+.aside-section-formatting{
     margin-bottom: 32px;
     color: #ffffff;
 }
-
-.benefit-brand {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-cost {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-lead h3 {
+.aside-section-formatting h3 {
     margin-bottom: 10px;
     text-align: center;
 }
 
-.benefit-brand h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-cost h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-lead img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.benefit-brand img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.benefit-cost img {
+.aside-section-formatting img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
 /* every class (seo optimazation, online rep management, marketing) called the exact same styling, 
 so it was condensed into one formatter. */
-.section-formatting {
+.main-section-formatting {
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
@@ -205,7 +175,7 @@ so it was condensed into one formatter. */
 }*/
 
 /*condensed the image size specifier to match with previous selector compression */
-.section-formatting img {
+.main-section-formatting img {
     max-height: 200px;
 }
 
@@ -221,11 +191,12 @@ so it was condensed into one formatter. */
 .social-media-marketing img {
     max-height: 200px;
 }
+*/
 
 .search-engine-optimization h2 {
     margin-bottom: 20px;
     font-size: 36px;
-} */
+}
 
 .online-reputation-management h2 {
     margin-bottom: 20px;
@@ -237,13 +208,13 @@ so it was condensed into one formatter. */
     font-size: 36px;
 }
 
-.footer {
+footer {
     padding: 30px;
     clear: both;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
 }
 
-.footer h2 {
+footer h2 {
     font-size: 20px;
 }
