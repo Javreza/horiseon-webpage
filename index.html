@@ -7,18 +7,33 @@
     <title>Horiseon</title>
 </head>
 <body>
+    <!--changed the div with the class header to a plain nav element -->
+    <!--added a header section -->
     <header>
+        <!--moved the nav section within the header element in an attempt to have them aligned like in the original page-->
         <nav>
+             <!--set the company logo to be a a home button-->
             <a href="#home"><h1>Hori<span class="seo">seo</span>n</h1></a>
+            <!--added a float right to the nav bar in hopes to align it with the company's logo. -->
             <div class="nav-nav">
+                <!--undid the unordered listing of navigation elements-->
                     <a href="#search-engine-optimization">Search Engine Optimization</a>
                     <a href="#online-reputation-management">Online Reputation Management</a>
                     <a href="#social-media-marketing">Social Media Marketing</a>
             </div>
         </nav>
     </header>
+    
+
+    <!--background image reformatted to accomidate for an alt tag.-->
     <img src="assets/images/digital-marketing-meeting.jpg" alt="A group of four office workers are holding a meeting. They all gaze at a stack of paper in the center of a meeting room's table." class="hero"/>
+    <!--div class="content" changed into main-->
+    <!--class='float left added to parent element'-->
     <main class="float-left">
+        <!--class was condensed to section formatting for all three major services and id specifier was removed since there's nothing in the css sheets that references ids-->
+        <!--id selector needed to be able to navigate to section from the nav bar, so they were added back.-->
+        <!--changed divs into sections in main since they all cover individual topics-->
+        <!--added alt tags to all images in main. -->
         <section id="search-engine-optimization" class="main-section-formatting">
             <img src="./assets/images/search-engine-optimization.jpg" class="float-left" alt="A notebook sits on a  wooden surface next to a laptop, coffee, and some stationary. The notebook has a mind map illustated on what SEO encompases. SEO at the center; with content, headings, mobile compatibility, social media, link building, and backlink, as branches." />
             <h2>Search Engine Optimization</h2>
@@ -27,6 +42,7 @@
             </p>
         </section>
         <section id="online-reputation-management" class="main-section-formatting">
+            <!--class changed from float-right to float left... might consolodate this formatting to the parent element.-->
             <img src="./assets/images/online-reputation-management.jpg" class="float-left" alt="This shows a person using a laptop, with a mug in the background. Their hands are holding a phone with their left hand (it's off) and navigating with the laptop's touchpad with the opposite hand. They are going through a dashboard titled 'Reputation'. The dashboard shows a bar chart accompanied with 5 pie charts. Three of them being blue and having percentages; the rest being neon colored." />
             <h2>Online Reputation Management</h2>
             <p>

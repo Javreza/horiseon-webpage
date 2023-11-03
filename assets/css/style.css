@@ -7,15 +7,17 @@
 body {
     background-color: #d9dcd6;
 }
-
+/*removed the period in front of header*/
+/*created a nav element with the header properties for the three links in the nav bar*/
 nav {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #2a607c;
     color: #ffffff;
     float:right;
-}
 
+}
+/*this header element formatting might be redundant,  10/27/2203 9:37 PM CST*/
 header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -24,7 +26,11 @@ header {
     display:flex;
 }
 
+/*removed .header class for formatters up until line 48.  10/29/2023 5:02 CSA*/
+
+/*removed all special formatting for h1's since they can be covered in the header class or seo class*/
 h1 {
+    /*display: inline-block;*/
     font-size: 48px;
     float:left;
 }
@@ -33,21 +39,45 @@ h1 .seo {
     color: #d9dcd6;
 }
 
-.nav-nav {
-    padding-top: 25px;
-    padding-left: 150px;
+/* went from .header to .nav with the line below*/
+/* .nav div {
+    padding-top: 15px;
+    margin-right: 20px;
     float: right;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
-}
+} */
 
+/*removed div selectors up until line 48 */
+
+/* condensed instructions for ul elemnts with the nav-nav class */
+.nav-nav {
+    /*list-style-type: none; suspected of redundancy */
+    /*added .nav div formatting to this class*/
+    padding-top: 25px;
+    padding-left: 150px;
+    /* muted margin right to align nav elements like in the original page 
+    margin-right: 20px; */
+    float: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    /*TESTTESTESTTESTTESTTESTTESTTEST ul li formatters moved to anchor tags */
+    /*display: inline-block;*/
+    /*margin-left: 25px;*/
+}
 ul {
     list-style-type: none;
 }
 
+/*ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+*/
 a {
     color: #ffffff;
     text-decoration: none;
+    /* ul li formatters moved to anchor tags */
     display: inline-block;
     margin-left: 25px;
 }
@@ -60,6 +90,10 @@ p {
     height: 800px;
     width: 100%;
     margin-bottom: 25px;
+    /*image was moved to main page to add an alt tag*/
+    /*background-image: url("../images/digital-marketing-meeting.jpg");*/
+    /*background-size: cover;
+    background-position: center; */
 }
 
 .float-left {
@@ -71,7 +105,7 @@ p {
     float: right;
     margin-left: 25px;
 }
-
+/*content changed into main*/
 main {
     width: 75%;
     display: inline-block;
@@ -101,7 +135,8 @@ aside {
     margin: 10px auto;
     max-width: 150px;
 }
-
+/* every class (seo optimazation, online rep management, marketing) called the exact same styling, 
+so it was condensed into one formatter. */
 .main-section-formatting {
     margin-bottom: 20px;
     padding: 50px;
@@ -110,10 +145,51 @@ aside {
     background-color: #0072bb;
     color: #ffffff;
 }
+/*.search-engine-optimization {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+}
 
+.online-reputation-management {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+}
+
+.social-media-marketing {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+}*/
+
+/*condensed the image size specifier to match with previous selector compression */
 .main-section-formatting img {
     max-height: 200px;
 }
+
+/*
+.search-engine-optimization img {
+    max-height: 200px;
+}
+
+.online-reputation-management img {
+    max-height: 200px;
+}
+
+.social-media-marketing img {
+    max-height: 200px;
+}
+*/
 
 .search-engine-optimization h2 {
     margin-bottom: 20px;
